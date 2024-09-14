@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "Chrome 调试模式",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}
