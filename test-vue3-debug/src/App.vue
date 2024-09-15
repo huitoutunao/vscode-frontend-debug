@@ -1,6 +1,15 @@
 <script setup>
+import { reactive } from 'vue'
 import { RouterLink, RouterView } from 'vue-router'
 import HelloWorld from './components/HelloWorld.vue'
+
+const state = reactive({
+  name: 'hello world'
+})
+
+const changeName = () => {
+  state.name = 'what is change'
+}
 </script>
 
 <template>
@@ -14,6 +23,8 @@ import HelloWorld from './components/HelloWorld.vue'
         <RouterLink to="/">Home</RouterLink>
         <RouterLink to="/about">About</RouterLink>
       </nav>
+      <p>{{ state.name }}</p>
+      <button @click="changeName">点我改名称</button>
     </div>
   </header>
 
