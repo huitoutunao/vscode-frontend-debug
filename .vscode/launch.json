@@ -1,0 +1,11 @@
+{
+    "configurations": [
+        {
+            "name": "React 源码调试模式",
+            "port": 9222,
+            "request": "attach",
+            "type": "chrome",
+            "webRoot": "${workspaceFolder}"
+        }
+    ]
+}

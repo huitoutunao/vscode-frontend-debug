@@ -198,6 +198,10 @@ function getRollupOutputOptions(
     interop: false,
     name: globalName,
     sourcemap: true,
+    sourcemapPathTransform(relativeSourcePath, sourcemapPath) {
+      const res = relativeSourcePath.replace('..\\..\\..\\..\\packages', 'E:\\vscode-frontend-debug\\react\\packages')
+      return res
+    },
     esModule: false,
   };
 }
