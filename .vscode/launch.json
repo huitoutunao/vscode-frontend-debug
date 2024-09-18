@@ -1,7 +1,7 @@
 {
     "configurations": [
         {
-            "name": "React 源码调试模式",
+            "name": "React & Vue 源码调试模式",
             "port": 9222,
             "request": "attach",
             "type": "chrome",

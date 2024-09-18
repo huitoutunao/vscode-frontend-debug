@@ -147,6 +147,10 @@ function createConfig(format, output, plugins = []) {
     output.esModule = true
   }
   output.sourcemap = !!process.env.SOURCE_MAP
+  output.sourcemapPathTransform = (relativeSourcePath, sourcemapPath) => {
+    const newSourcemapPath = path.join(path.dirname(sourcemapPath), relativeSourcePath)
+    return newSourcemapPath
+  }
   output.externalLiveBindings = false
   // https://github.com/rollup/rollup/pull/5380
   output.reexportProtoFromExternal = false
