@@ -32,3 +32,5 @@ launch.json 配置 sourceMapPathOverrides
     ]
 }
 ```
+
+js 文件调试通过 debugger 打断点，代码行左侧打断点无效。
