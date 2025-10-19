@@ -1,5 +1,7 @@
 # vue2 调试模式
 
+**package.json 文件的 name 属性值和项目文件夹名称保持一致。**
+
 vue.config.js 配置 source-map
 ```js
 const { defineConfig } = require('@vue/cli-service')
@@ -33,4 +35,9 @@ launch.json 配置 sourceMapPathOverrides
 }
 ```
 
-js 文件调试通过 debugger 打断点，代码行左侧打断点无效。
+js 文件调试通过 debugger 打断点，代码行左侧打断点无效。但是 debugger 之后会进入一个新页面，这个页面可以在代码左侧进行断点调试。
+
+## 查看调试断点为什么无效？
+
+![图片1](./static/1.png)
+![图片2](./static/2.png)
